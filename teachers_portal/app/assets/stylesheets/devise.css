@@ -1,0 +1,330 @@
+/* General body style for the login page */
+.devise-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+}
+
+/* Main container for the login box */
+.devise-page .login-container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Logo/Brand styling */
+.devise-page .login-logo h1 {
+  color: #d22d2d;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Title for page instructions */
+.devise-page .login-instructions {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.devise-page .login-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.devise-page .login-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.devise-page .login-form input[type="text"],
+.devise-page .login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.devise-page .login-form input[type="text"]:focus,
+.devise-page .login-form input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Eye icon for password visibility */
+.devise-page .toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Forgot password link styling */
+.devise-page .forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.devise-page .forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Submit button styling */
+.devise-page .btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.devise-page .btn-login:hover {
+  background-color: #555;
+}
+
+/* Additional padding for the message above login form */
+.devise-page .message {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Forgot Password link styling */
+.devise-page .forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.devise-page .forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Sign Up prompt styling */
+.devise-page .sign-up-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.devise-page .sign-up-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.devise-page .sign-up-link:hover {
+  text-decoration: underline;
+}
+
+/* Flash message styling */
+.devise-page .flash-message {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Error message styling */
+.devise-page .flash-message.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success/Notice message styling */
+.devise-page .flash-message.notice {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Signup container styling */
+.devise-page .signup-container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Logo styling */
+.devise-page .signup-logo h1 {
+  color: #d22d2d;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form and button styling */
+.devise-page .signup-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.devise-page .signup-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.devise-page .signup-form input[type="text"],
+.devise-page .signup-form input[type="email"],
+.devise-page .signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.devise-page .signup-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.devise-page .btn-signup {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.devise-page .btn-signup:hover {
+  background-color: #555;
+}
+
+/* Link to login page */
+.devise-page .login-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.devise-page .login-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.devise-page .login-link:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password container styling */
+.devise-page .forgot-password-container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Logo styling */
+.devise-page .forgot-password-logo h1 {
+  color: #d22d2d;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form and button styling */
+.devise-page .forgot-password-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.devise-page .forgot-password-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.devise-page .forgot-password-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.devise-page .forgot-password-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.devise-page .btn-reset {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.devise-page .btn-reset:hover {
+  background-color: #555;
+}
+
+/* Link to login page */
+.devise-page .login-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.devise-page .login-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.devise-page .login-link:hover {
+  text-decoration: underline;
+}

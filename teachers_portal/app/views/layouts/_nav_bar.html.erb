@@ -1,0 +1,20 @@
+<!-- Header/Navigation Bar -->
+<% unless devise_controller? %>
+    <header class="navbar">
+      <div class="logo">tailwebs.</div>
+      <nav>
+        <ul>
+          <li><%= link_to 'Home', root_path %></li>
+          <% if teacher_signed_in? %>
+            <%= form_with url: destroy_teacher_session_path, method: :delete do %>
+                <%= submit_tag 'Logout' %>
+            <% end %>
+        <% end %>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="content">
+<% end %>
+

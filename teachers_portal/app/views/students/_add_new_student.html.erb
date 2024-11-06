@@ -1,0 +1,22 @@
+<!-- Add Student Modal -->
+<div id="addStudentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span> <!-- Removed onclick="closeModal()" -->
+    <h2>Add New Student</h2>
+    
+    <form id="addStudentForm">
+      <label for="studentName">Name</label>
+      <input type="text" id="studentName" placeholder="Enter Name" required>
+
+      <label for="studentSubject">Subject</label>
+      <input type="text" id="studentSubject" placeholder="Enter Subject" required>
+
+      <label for="studentMarks">Mark</label>
+      <input type="number" id="studentMarks" placeholder="Enter Marks" required>
+
+      <button type="button" id="addStudentButton">Add</button> <!-- Removed onclick="addStudent()" -->
+    </form>
+  </div>
+</div>
+
+<button id="openModalButton" class="add-button">Add Student</button>

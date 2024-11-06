@@ -1,0 +1,24 @@
+<div class="search-filter-container">
+  <!-- Search by name -->
+  <%= form_with url: students_path, method: :get, local: true do %>
+    <input type="text" name="search" placeholder="Search by name" value="<%= params[:search] %>">
+
+    <!-- Filter by subject -->
+    <select name="subject">
+      <option value="">All Subjects</option>
+      <% @subjects.each do |subject| %>
+        <option value="<%= subject %>" <%= 'selected' if params[:subject] == subject %>><%= subject %></option>
+      <% end %>
+    </select>
+
+    <!-- Filter by performance -->
+    <select name="performance">
+      <option value="">All Performance Levels</option>
+      <option value="top" <%= 'selected' if params[:performance] == 'top' %>>Top Performers</option>
+      <option value="average" <%= 'selected' if params[:performance] == 'average' %>>Average Performers</option>
+      <option value="struggling" <%= 'selected' if params[:performance] == 'struggling' %>>Struggling Students</option>
+    </select>
+
+    <%= submit_tag "Filter", class: "filter-button" %>
+  <% end %>
+</div>

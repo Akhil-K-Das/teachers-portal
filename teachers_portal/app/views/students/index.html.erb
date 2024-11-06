@@ -1,0 +1,44 @@
+<div class="student-list">
+  <%= render "search_and_filter" %>
+  <table class="students-table">
+    <thead>
+      <tr>
+        <th class="name-column">Name</th>
+        <th class="subject-column">Subject</th>
+        <th class="marks-column">Marks</th>
+        <th class="action-column">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @students.each do |student| %>
+        <tr id="student_<%= student.id %>">
+          <td>
+            <span class="student-name"><%= student.name %></span>
+            <input type="text" class="edit-name" value="<%= student.name %>" style="display:none;">
+          </td>
+          <td>
+            <span class="student-subject"><%= student.subject_name %></span>
+            <input type="text" class="edit-subject" value="<%= student.subject_name %>" style="display:none;">
+          </td>
+          <td>
+            <span class="student-marks"><%= student.marks %></span>
+            <input type="number" class="edit-marks" value="<%= student.marks %>" style="display:none;">
+          </td>
+          <td>
+            <div class="action-dropdown">
+              <button class="action-button">▼</button>
+              <div class="dropdown-menu" style="display: none;">
+                <a href="#" class="edit-icon" data-id="<%= student.id %>">Edit</a>
+                <a href="#" class="delete-icon" data-id="<%= student.id %>">Delete</a>
+              </div>
+            </div>
+              <a href="#" class="save-icon save-button" data-id="<%= student.id %>" style="display: none;">Save</a>
+            </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= render "add_new_student" %>
+
